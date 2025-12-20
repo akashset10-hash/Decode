@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 import com.qualcomm.robotcore.util.Range;
 
 public class Shooter {
-    private static final double DEFAULT_SHOOTER_POWER = 0.85;
+    private static final double DEFAULT_SHOOTER_POWER = 0.7;
 
     // --- SUBSYSTEM OBJECTS ---
     private final DcMotorEx flywheelMotor;
