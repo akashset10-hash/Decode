@@ -117,14 +117,14 @@ public class redAuto extends OpMode {
             // Path 1: Moving straight up on Red side
             // Rotation: 90 to 45 degrees
             Path1 = follower.pathBuilder()
-                    .addPath(new BezierLine(new Pose(88, 7.225, Math.toRadians(90)), new Pose(88, 87.37, Math.toRadians(45))))
+                    .addPath(new BezierLine(new Pose(88, 8, Math.toRadians(90)), new Pose(88, 87.37, Math.toRadians(45))))
                     .setLinearHeadingInterpolation(Math.toRadians(90), Math.toRadians(45))
                     .build();
 
             // Path 2: Diagonal to Red Bucket
             // End Point: X: 114.59, Y: 113.41
             Path2 = follower.pathBuilder()
-                    .addPath(new BezierLine(new Pose(88, 87.37, Math.toRadians(45)), new Pose(114.59, 113.41, Math.toRadians(45))))
+                    .addPath(new BezierLine(new Pose(88, 87.37, Math.toRadians(45)), new Pose(114.59, 113, Math.toRadians(45))))
                     .build();
         }
     }
