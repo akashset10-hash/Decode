@@ -15,7 +15,7 @@ import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
 import org.firstinspires.ftc.teamcode.subsystems.Intake;
 import org.firstinspires.ftc.teamcode.subsystems.Shooter;
 
-@Autonomous(name = "blueTriangle", group = "Autonomous")
+@Autonomous(name = "", group = "Autonomous")
 @Configurable
 public class blueTriangle extends OpMode {
 
