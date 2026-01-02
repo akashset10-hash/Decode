@@ -18,11 +18,11 @@ public class Shooter {
     }
 
     public void shoot() {
-        setPower(DEFAULT_SHOOTER_POWER);
+        flywheelMotor.setPower(0.7);
     }
 
     public void stop() {
-        setPower(0.0);
+        flywheelMotor.setPower(0.0);
     }
 
     public void setPower(double power) {
