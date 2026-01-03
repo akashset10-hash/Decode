@@ -66,9 +66,11 @@ public class testTeleOp extends OpMode {
         // --- SHOOTER CONTROL LOGIC (Uses SQUARE/X button) ---
         // When Square (gamepad1.x) is held, the shooter runs. When released, it stops.
         if (gamepad1.right_trigger > 0.1) {
+            intake.openGate();
             shooter.shoot();
             telemetry.addData("Shooter", "RUNNING (Square/X)");
         } else {
+            intake.closeGate();
             shooter.stop();
             telemetry.addData("Shooter", "STOPPED");
         }
